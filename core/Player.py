@@ -7,7 +7,7 @@ from pynput import keyboard, mouse
 from model.Coordinates import Coordinates
 from model.Macro import Macro
 from model.Screen import Screen
-from model.UnfoldedStep import UnfoldedStep
+from util.UnfoldedStep import UnfoldedStep
 from message.PlayerMessage import PlayerMessage
 from message.ErrorMessage import ErrorMessage
 from util.Event_Enum import PlayerEvent
