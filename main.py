@@ -41,9 +41,6 @@ from util.Dispatcher_Enum import Dispatcher
 T = TypeVar("T", bound=QObject)
 LOGS_FOLDER = "./Logs"
 
-class GuiConfig:
-    def __init__(self) -> None:
-        self.show_connections = False
 
 class MainWindow(QMainWindow):
     def __init__(self) -> None:
@@ -93,7 +90,6 @@ class MainWindow(QMainWindow):
                                     subcontrol-position: top center;
                                 }
                             """)
-        self.gui_config: GuiConfig = GuiConfig()
 
         # MAIN CENTRAL ITEMS
         self.main_central_widget: QWidget = QWidget()
