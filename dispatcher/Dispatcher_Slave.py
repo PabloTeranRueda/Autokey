@@ -26,7 +26,7 @@ from dispatcher.Abstract_Dispatcher import Abstract_Dispatcher
 from core.Player import Player
 from model.Macro import Macro
 from model.Screen import Screen
-from model.Target import Target
+from util.Target import Target
 from util.Event_Enum import DispatcherEvent, ExampleEvent, MacroEvent, PlayerEvent
 from util.State_Enum import State
 

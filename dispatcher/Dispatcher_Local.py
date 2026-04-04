@@ -8,7 +8,7 @@ from dispatcher.Abstract_Dispatcher import Abstract_Dispatcher
 from core.Recorder import Recorder
 from core.Player import Player
 from datetime import datetime
-from model.Target import Target
+from util.Target import Target
 from util.State_Enum import State
 from util.Event_Enum import DispatcherEvent, MacroEvent
 from message.DispatcherMessage import DispatcherMessage

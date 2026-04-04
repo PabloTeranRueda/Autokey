@@ -24,7 +24,7 @@ from model.Coordinates import Coordinates
 from model.Macro import Macro
 from model.Screen import Screen
 import requests
-from model.Target import Target
+from util.Target import Target
 from util.Event_Enum import DispatcherEvent
 from util.Message_Enum import MessageEnum
 from util.sse_client import Event, SSEClient

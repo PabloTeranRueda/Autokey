@@ -32,7 +32,7 @@ from messenger.messenger import Messenger
 from model.Coordinates import Coordinates
 from model.Screen import Screen
 from model.Macro import Macro
-from model.Target import Target
+from util.Target import Target
 from util.DBConnection import DBConnection
 from util.Event_Enum import DispatcherEvent, MacroEvent, PlayerEvent
 from util.parse_ini import parse_ini

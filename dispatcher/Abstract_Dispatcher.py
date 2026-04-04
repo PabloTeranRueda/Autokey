@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 from messenger.messenger import Messenger
 from model.Macro import Macro
 from model.Screen import Screen
-from model.Target import Target
+from util.Target import Target
 
 class Abstract_Dispatcher(ABC):
     def __init__(self,messenger:Messenger, available_screens:list[Screen]) -> None:
