@@ -31,9 +31,6 @@ from util.Event_Enum import DispatcherEvent, ExampleEvent, MacroEvent, PlayerEve
 from util.State_Enum import State
 
 
-def single_message_stream(data:str):
-    yield data
-
 class Dispatcher_Slave(Abstract_Dispatcher,ABC):
     def __init__(self, messenger:Messenger, available_screens:list[Screen]) -> None:
         super().__init__(messenger, available_screens) 
