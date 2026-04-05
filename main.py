@@ -696,7 +696,7 @@ class MainWindow(QMainWindow):
             if not os.path.exists(LOGS_FOLDER):
                 os.makedirs(name=LOGS_FOLDER)
         
-            with open(file=f"./Logs/{datetime.now().strftime("%Y-%m-%d")}.log",mode="a",encoding="UTF-8") as log:
+            with open(file=f"{LOGS_FOLDER}/{datetime.now().strftime("%Y-%m-%d")}.log",mode="a",encoding="UTF-8") as log:
                 log.write(line)
         
         except Exception as e:
