@@ -54,8 +54,6 @@ class MainWindow(QMainWindow):
             db=self.bbdd)
         self.controller: DBRequestsController = DBRequestsController()
 
-        self.queue: Queue[AbstractUpdateMessage] = Queue[AbstractUpdateMessage]()
-
         self.messenger: Messenger = Messenger()
         self.messenger.signal.connect(self.consume_events)
 
