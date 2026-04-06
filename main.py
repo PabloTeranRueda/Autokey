@@ -425,6 +425,19 @@ class MainWindow(QMainWindow):
         progress_bar: QProgressBar = QProgressBar(parent=box)
         progress_bar.setTextVisible(True)
         progress_bar.setFormat("Step %v of %m (%p%)")
+        progress_bar.setStyleSheet("""
+            QProgressBar {
+                border: 1px solid gray;
+                border-radius: 5px;
+                background-color: white;
+                text-align: center;
+            }
+
+            QProgressBar::chunk {
+                background-color: #e7eef5;
+                border-radius: 24px;
+            }
+        """)
         progress_bar.setObjectName("progress_bar")
         progress_bar.hide()
 
