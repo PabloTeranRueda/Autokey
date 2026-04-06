@@ -342,11 +342,14 @@ class MainWindow(QMainWindow):
         host: str = self.host_text_edit.text()
         port_str: str = self.port_text_edit.text()
 
+        if port_str == "":
+            return None
+
         try:
             port = int(port_str)
         except (ValueError,TypeError) as e:
             self.messenger.send_event(ErrorMessage(event_time=datetime.now(),error=str(e)))
-            return
+            return None
 
         return Target(host=host,port=port)
 
